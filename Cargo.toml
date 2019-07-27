@@ -1,0 +1,24 @@
+[package]
+name = "svg-arch"
+version = "0.0.1"
+authors = ["Daniel Reiter Horn <danielrh@graphics.stanford.edu>"]
+description = "A simple SVG creator where you can stamp svg clip art into a scene."
+license = "BSD-3-Clause/MIT"
+documentation = ""
+homepage = "https://github.com/danielrh/svg-arch"
+repository = "https://github.com/danielrh/svg-arch"
+keywords = ["svg", "gui"]
+readme = "README.md"
+autobins = false
+
+[[bin]]
+doc = false
+name = "svg-arch"
+
+
+
+
+[dependencies]
+"azul" = {git = "https://github.com/maps4print/azul", rev="46e5f18f205c0ca0c66a9cfaa25f79929cd97c3d", features = ["svg", "svg_parsing"]}
+
+
